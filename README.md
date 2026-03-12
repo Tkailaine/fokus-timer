@@ -7,11 +7,11 @@ O projeto simula ciclos de foco e pausas para estudo ou trabalho, permitindo alt
 ---
 
 ## Preview
-<div style="display:flex">
+
 <img width="1894" height="912" alt="image" src="https://github.com/user-attachments/assets/b606e1e7-0c5d-4cf6-a706-0cebccd3d2c3" />
 <img width="1901" height="944" alt="image" src="https://github.com/user-attachments/assets/8aa36c0d-efc9-43fe-af4d-2e5defb3fb97" />
 <img width="1898" height="945" alt="image" src="https://github.com/user-attachments/assets/eea383c6-0753-41b4-b39b-8671d0a29878" />
-</div>
+
 
 
 ---
@@ -73,7 +73,7 @@ fokus-timer
 
 ## Deploy
 
-Em breve disponível online.
+https://fokus-timer-six.vercel.app/
 
 ---
 
