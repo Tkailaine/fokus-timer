@@ -107,6 +107,12 @@ function alterarTitulo(lista,index){
 
 const contagemRegressiva = () => {
     if(tempoDecorridoEmSegundos <= 0){
+        const focoAtivo = html.getAttribute('data-contexto') == 'foco'
+        //Criando evento personalizado (outras partes podem ouvir e reagir ao evendo, como o scriptCrud)
+        if(focoAtivo){
+            const evento = new CustomEvent('FocoFinalizado')
+            document.dispatchEvent(evento)
+        }
         zerar()
         return
     }

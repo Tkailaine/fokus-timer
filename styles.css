@@ -1,5 +1,5 @@
 :root {
-     --color-primary: #123456;
+    --color-primary: #123456;
     --color-secondary: #FFF;
     --azul-royal: #144480;
     --fundo-card-timer: rgba(20, 68, 128, 0.30);
@@ -180,70 +180,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 150%;
 }
 
-/* configuracoes */
-#configuracoes__div{
-    margin: 30px auto;
-}
-#configuracoes{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    gap: 10px;
-    opacity: 0;  
-    transition: max-height 0.35s ease, opacity 0.35s ease;
-    max-height: 0;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-#configuracoes.active{
-    max-height: 200px;
-    opacity: 1;
-    pointer-events: all;
-}
-
-#btn__configuracoes{ 
-    display: block;
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    margin: auto; 
-}
-
-.seta {
-    display: inline-block;
-    margin-left: 6px;
-    transition: transform 0.3s ease;
-    font-size: 0.7em;
-}
-
-.seta.rotacionada {
-    transform: rotate(180deg);
-}
-
-#timeConfiguracao{
-    background-color: #1876e954; 
-}
-
-#timeConfiguracao , #btnSalvarTempo{
-    padding: 10px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    color: white;
-}
-
-#timeConfiguracao::placeholder{
-    color: white;
-}
-
-#btnSalvarTempo{
-    background-color: #0F725C;
-}
-
 /* toggle */
 .toggle {
     cursor: pointer;
@@ -296,30 +232,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* fim - toggle */
 
-
-/* Para Tablets */
-@media (max-width: 1024px) and (min-width: 768px) {
-    .app__section-banner-container {
-        width: 48rem;
-    }
-}
-
-/* Para Celulares */
-@media (max-width: 767px) {
-    .app__section-banner-container {
-        width: 32rem;
-    }
-
-    .app__title {
-        font-size: 2.6rem;
-    }
-
-    .app__card-timer {
-        font-size: 6rem;
-    }
-}
-
-
 /* dropdown */
 .dropdown-container {
     position: relative;
@@ -336,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app__section-task-header__ul:hover,
-.app_button-more:hover .app__section-task-header__ul {
+.app_button-more:hover ~ .app__section-task-header__ul {
     display: block;
     text-align: right;
     border-radius: 0.8rem;
@@ -363,6 +275,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* fim - dropdown */
 
+
+/* Para Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .app__section-banner-container {
+        width: 48rem;
+    }
+}
+
 /* Para Celulares */
 @media (max-width: 767px) {
     .app__section-banner-container {
@@ -385,6 +305,7 @@ h1, h2, h3, h4, h5, h6 {
 .hidden {
     display: none;
 }
+
 
 .app__section-task-container {
     display: flex;
@@ -588,4 +509,68 @@ h1, h2, h3, h4, h5, h6 {
     color: #e6e6e6;
     opacity: 0.8;
     cursor: not-allowed;
+}
+
+/* configuracoes */
+#configuracoes__div{
+    margin: 30px auto;
+}
+#configuracoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    opacity: 0;  
+    transition: max-height 0.35s ease, opacity 0.35s ease;
+    max-height: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#configuracoes.active{
+    max-height: 200px;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#btn__configuracoes{ 
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: auto; 
+}
+
+.seta {
+    display: inline-block;
+    margin-left: 6px;
+    transition: transform 0.3s ease;
+    font-size: 0.7em;
+}
+
+.seta.rotacionada {
+    transform: rotate(180deg);
+}
+
+#timeConfiguracao{
+    background-color: #1876e954; 
+}
+
+#timeConfiguracao , #btnSalvarTempo{
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+#timeConfiguracao::placeholder{
+    color: white;
+}
+
+#btnSalvarTempo{
+    background-color: #0F725C;
 }
