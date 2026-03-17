@@ -139,8 +139,13 @@ btnRemoverTarefas.onclick = () => {
     document.querySelectorAll(seletor).forEach(elemento => {
         elemento.remove()
     })
-    tarefas = []
+    tarefas.length = 0
+    tarefaSelecionada = null
+    liTarefaSelecionada = null
+    paragrafoDescricaoTarefa.textContent = ''
+
     atualizarTarefa()
+
 
 }
 
